@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>LJOTAB buttons</title>
+</head>
+<body>
+
+  <button type="button" onclick="jouerSon()">
+    <img src="image_bouton.jpg" alt="Bouton audio" style="margin-left:100px;" width="1000" height="1000">
+  </button>
+
+
+  <audio id="son" src="bamako.m4a"></audio>
+
+  <script>
+    function jouerSon() {
+      const audio = document.getElementById("son");
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
