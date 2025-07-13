@@ -11,12 +11,31 @@
   </button>
 
 
-  <audio id="son" src="bamako.m4a"></audio>
+  <audio id="sound1" src="audios/amour.m4a"></audio>
+  <audio id="sound2" src="audios/baleine.m4a"></audio>
+  <audio id="sound3" src="audios/bamako.m4a"></audio>
+  <audio id="sound4" src="audios/bergamote.m4a"></audio>
+  <audio id="sound5" src="audios/conasse.m4a"></audio>
+  <audio id="sound6" src="audios/minable.m4a"></audio>
+  <audio id="sound7" src="audios/moche.m4a"></audio>
+  <audio id="sound8" src="audios/mouche.m4a"></audio>
+  <audio id="sound9" src="audios/pute.m4a"></audio>
+  <audio id="sound10" src="audios/sperme.m4a"></audio>
+  <audio id="sound11" src="audios/travail.m4a"></audio>
+  <audio id="sound12" src="audios/truie.m4a"></audio>
 
   <script>
     function jouerSon() {
-      const audio = document.getElementById("son");
+      var audioal = alea();
+      const audio = document.getElementById(audioal);
       audio.play();
+    }
+
+    function alea() {
+      var x = Math.floor(Math.random() * 12);
+      console.log(x);
+      var sounds = ["sound1", "sound2", "sound3", "sound4", "sound5", "sound6", "sound7", "sound8", "sound9", "sound10", "sound11", "sound12"];
+      return sounds[x];
     }
   </script>
 
